@@ -1,5 +1,3 @@
-require 'app'
-
 feature "Checking homepage" do
   scenario "test" do
     visit('/')
