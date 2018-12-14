@@ -6,9 +6,11 @@ feature "Checking homepage" do
 
   scenario "players enter lobby" do
     visit ('/')
-    fill_in :names, with: "Jacques" "John"
+    fill_in :player1, with: "Jacques"
+    fill_in :player2, with: "John"
     click_button "Submit"
-    expect(page).to have_content "Jacques" "John"
+    expect(page).to have_content "Jacques"
+    expect(page).to have_content "John"
   end
 
 end
