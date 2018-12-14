@@ -9,8 +9,7 @@ feature "Checking homepage" do
     fill_in :player1, with: "Jacques"
     fill_in :player2, with: "John"
     click_button "Submit"
-    expect(page).to have_content "Jacques"
-    expect(page).to have_content "John"
+    expect(page).to have_content "Jacques vs. John"
   end
 
 end
